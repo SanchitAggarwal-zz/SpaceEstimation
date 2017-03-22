@@ -1,0 +1,69 @@
+matlab -nodisplay -nospash -nojvm
+
+ComputeImageCues('../ICPR_DataSet/CVIT/Clutter/','../Input/Computed/RegSize20/CVIT/Clutter/',20)
+
+ComputeImageCues('../ICPR_DataSet/CVIT/NonClutter/','../Input/Computed/RegSize20/CVIT/NonClutter/',20)
+
+ComputeImageCues('../ICPR_DataSet/Sun/Clutter/','../Input/Computed/RegSize20/Sun/Clutter/',20)
+
+ComputeImageCues('../ICPR_DataSet/Sun/NonClutter/','../Input/Computed/RegSize20/Sun/NonClutter/',20)
+
+---------------------------
+
+FloorDetection('../Input/Computed/RegSize20/Sun/NonClutter/','../Output/RegSize20/Sun/NonClutter/',90,[0.66 0.82 0.70])
+
+FloorDetection('../Input/Computed/RegSize20/Sun/Clutter/','../Output/RegSize20/Sun/Clutter/',90,[0.66 0.82 0.70])
+
+FloorDetection('../Input/Computed/RegSize20/Sun/Mixed/','../Output/RegSize20/Sun/Mixed/',90,[0.66 0.82 0.70])
+
+
+FloorDetection('../Input/Computed/RegSize20/CVIT/NonClutter/','../Output/RegSize20/CVIT/NonClutter/',90,[0.66 0.82 0.70])
+
+FloorDetection('../Input/Computed/RegSize20/CVIT/Clutter/','../Output/RegSize20/CVIT/Clutter/',90,[0.66 0.82 0.70])
+
+FloorDetection('../Input/Computed/RegSize20/CVIT/Mixed/','../Output/RegSize20/CVIT/Mixed/',90,[0.66 0.82 0.70])
+
+
+---------------------
+
+ResultAnalysis('../Output/RegSize20/Sun/NonClutter/','../Results/RegSize20/Sun/NonClutter/')
+
+ResultAnalysis('../Output/RegSize20/Sun/Clutter/','../Results/RegSize20/Sun/Clutter/')
+
+ResultAnalysis('../Output/RegSize20/Sun/Mixed/','../Results/RegSize20/Sun/Mixed/')
+
+
+ResultAnalysis('../Output/RegSize20/CVIT/NonClutter/','../Results/RegSize20/CVIT/NonClutter/')
+
+ResultAnalysis('../Output/RegSize20/CVIT/Clutter/','../Results/RegSize20/CVIT/Clutter/')
+
+ResultAnalysis('../Output/RegSize20/CVIT/Mixed/','../Results/RegSize20/CVIT/Mixed/')
+
+
+
+---------------------
+
+PlotMaps('../Input/Computed/RegSize20/Sun/NonClutter/','../Results/RegSize20/Sun/NonClutter/')
+
+PlotMaps('../Input/Computed/RegSize20/Sun/Clutter/','../Results/RegSize20/Sun/Clutter/')
+
+PlotMaps('../Input/Computed/RegSize20/Sun/Mixed/','../Results/RegSize20/Sun/Mixed/')
+
+
+PlotMaps('../Input/Computed/RegSize20/CVIT/NonClutter/','../Results/RegSize20/CVIT/NonClutter/')
+
+PlotMaps('../Input/Computed/RegSize20/CVIT/Clutter/','../Results/RegSize20/CVIT/Clutter/')
+
+PlotMaps('../Input/Computed/RegSize20/CVIT/Mixed/','../Results/RegSize20/CVIT/Mixed/')
+
+
+
+
+
+ComputeImageCues('../ICPR_Qualitative_Analysis/ICPR_Dataset/Sun/OverlyClutter/','../ICPR_Qualitative_Analysis/Input/Computed/RegSize20/Sun/OverlyClutter2/',20)
+
+FloorDetection('../ICPR_Qualitative_Analysis/Input/Computed/RegSize20/Sun/OverlyClutter/','../ICPR_Qualitative_Analysis/Output/RegSize20/Sun/OverlyClutter/',90,[0.66 0.82 0.70])
+
+
+
+ResultAnalysis('../ICPR_Qualitative_Analysis/Output/RegSize20/Sun/OverlyClutter/','../ICPR_Qualitative_Analysis/Results/RegSize20/Sun/OverlyClutter/')

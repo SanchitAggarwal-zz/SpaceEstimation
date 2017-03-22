@@ -1,0 +1,14 @@
+Baseline('../Baseline/Test_Input/CVIT/Clutter/','../Baseline/PPM/CVIT/Clutter/','../Baseline/Superpixel/CVIT/Clutter/','../Baseline/VarshaResults/CVIT/Clutter/');
+
+Baseline('../Baseline/Test_Input/CVIT/NonClutter/','../Baseline/PPM/CVIT/NonClutter/','../Baseline/Superpixel/CVIT/NonClutter/','../Baseline/VarshaResults/CVIT/NonClutter/');
+
+Baseline('../Baseline/Test_Input/CVIT/Mixed/','../Baseline/PPM/CVIT/Mixed/','../Baseline/Superpixel/CVIT/Mixed/','../Baseline/VarshaResults/CVIT/Mixed/');
+
+
+Baseline('../Baseline/Test_Input/Sun/NonClutter/','../Baseline/PPM/Sun/NonClutter/','../Baseline/Superpixel/Sun/NonClutter/','../Baseline/VarshaResults/Sun/NonClutter/');
+
+Baseline('../Baseline/Test_Input/Sun/Clutter/','../Baseline/PPM/Sun/Clutter/','../Baseline/Superpixel/Sun/Clutter/','../Baseline/VarshaResults/Sun/Clutter/');
+
+
+Baseline('../Baseline/Test_Input/Sun/Mixed/','../Baseline/PPM/Sun/Mixed/','../Baseline/Superpixel/Sun/Mixed/','../Baseline/VarshaResults/Sun/Mixed/');
+
